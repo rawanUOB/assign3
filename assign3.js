@@ -16,14 +16,14 @@ async function fetchUOBDetails (){
 
     }
     catch (error) {
-        console.error("an error occured when trying to fetch data", (error)); 
+        console.error("an error occured when trying to fetch data", error); 
     }
 }
 
 
 function UOBresults(results){
     const table = document.getElementById('the_body');
-
+    table.innerHTML='';
     results.forEach(res => {
         console.log(res) 
 
